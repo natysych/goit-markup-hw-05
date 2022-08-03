@@ -20,50 +20,54 @@
 <!-- Оглавление -->
 
 <header class="header">
-<div class="container header-container">
-<nav class="navigation">
-    <a href="" class="webstudio"><span class="web">Web</span><span class="studio">Studio</span></a>
-        <ul class="nav-list">
-            <li class="nav-listitem"><a href="./index.html" class="href current">Студия</a></li>
-            <li class="nav-listitem"><a href="./portfolio.html" class="href">Портфолио</a></li>
-            <li class="nav-listitem"><a href="/" class="href">Контакты</a></li>
-        </ul>
-</nav>
+    <div class="container header-container">
+    <nav class="navigation">
+        <a href="" class="webstudio"><span class="web">Web</span><span class="studio">Studio</span></a>
+            <ul class="nav-list">
+                <div class="block">
+                    <li class="nav-listitem"><a href="./index.html" class="href current">Студия</a></li>
+                </div>
+                <li class="nav-listitem"><a href="./portfolio.html" class="href">Портфолио</a></li>
+         
+                <li class="nav-listitem"><a href="/" class="href">Контакты</a></li>
 
-<ul class="nav-listcontacts">
-        <li class="email">
+            </ul>
+    </nav>
+    
+    <ul class="nav-listcontacts">
+            <li class="email">
+               
+            <a href="mailto:info@example.com" class="contacts" >
+                <svg class="envelope contacts" width="16" height="12">
+                    <use 
+                    href="./images/sprite.svg#icon-envelope">
+                </use>
+                </svg>
+                info@example.com</a>
+    
+            </li>
            
-        <a class="contacts" href="mailto:info@example.com">
-            <svg class="envelope" width="16" height="12">
-                <use 
-                href="./images/sprite.svg#icon-envelope">
-            </use>
-            </svg>
-            info@example.com</a>
-
-        </li>
-       
-        <li class="tel">
-            
-        <a class="contacts" href="tel:0961111111">
-            <svg class="smartphone" width="10" height="16">
-                <use 
-                href="./images/sprite.svg#icon-smartphone">
-            </use>
-            </svg >
-            +380961111111
-        </a>
-        </li>
-</ul>
-</div>
-</header>
+            <li class="tel">
+                
+            <a href="tel:0961111111" class="contacts" >
+                <svg class="smartphone contacts" width="10" height="16">
+                    <use 
+                    href="./images/sprite.svg#icon-smartphone">
+                </use>
+                </svg >
+                +380961111111
+            </a>
+            </li>
+    </ul>
+    </div>
+    </header>
 
 <main>
 
     <section class="solution">
         <div class="container">
         <h1 class="solution-text">Эффективные решения для вашего бизнеса</h1>
-        <button class="button-orderservice" type="button">Заказать услугу</button>
+        <button class="button-orderservice" type="button" data-modal-open>Заказать услугу</button>
     </div>
     </section>
     <!-- Advantages --> 
@@ -347,57 +351,70 @@
         <!-- Контакты -->
         <footer class="footer">
        
-        <div class="footer-container container"> 
-            <div class="href-and-adress">
-        <a href="" class="webstudio"><span class="web">Web</span><span class="studiofooter">Studio</span></a>
-
-            <address>
-            <ul class="nav-footer">
-            <li class="address">г. Киев, пр-т Леси Украинки, 26</li>
-            <li><a href="mailto:info@example.com" class="contacts">info@example.com</a></li>
-            <li><a href="tel:+380961111111" class="contacts">+38 097 111 11 11</a></li>
-            </ul>
-            </address>
-            </div>
-            <div class="section-join"> 
-            <h3 class="header-join">Присоединяйтесь</h3>   
-                <ul class="social-list list">
-                <li class="social-list-items">
-                    <a class="social-list-link" href="">
-                        <svg class="social-list-icon" width="20" height="20">
-                            <use href="./images/sprite.svg#icon-insta"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social-list-items">
-                    <a class="social-list-link" href="">
-                        <svg class="social-list-icon" width="20" height="20">
-                            <use href="./images/sprite.svg#icon-twitter"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social-list-items">
-                    <a class="social-list-link" href="">
-                        <svg class="social-list-icon" width="20" height="20">
-                            <use href="./images/sprite.svg#icon-fb"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social-list-items">
-                    <a class="social-list-link" href="">
-                        <svg class="social-list-icon" width="20" height="20">
-                            <use href="./images/sprite.svg#icon-ldn"></use>
-                        </svg>
-                    </a>
-                </li>
-                 </ul>
+            <div class="footer-container container"> 
+                <div class="href-and-adress">
+            <a href="" class="webstudio"><span class="web">Web</span><span class="studiofooter">Studio</span></a>
+    
+                <address>
+                <ul class="nav-footer">
+                <li class="address">г. Киев, пр-т Леси Украинки, 26</li>
+                <li><a class="contacts-footer" href="mailto:info@example.com">info@example.com</a></li>
+                <li><a class="contacts-footer" href="tel:+380961111111">+38 097 111 11 11</a></li>
+                </ul>
+                </address>
                 </div>
-
-                </div>
-       
-      
-        </footer>
+                <div class="section-join"> 
+                <p class="header-join" strong>Присоединяйтесь</p>   
+                    <ul class="social-list list">
+                    <li class="social-list-items">
+                        <a class="social-list-link" href="">
+                            <svg class="social-list-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-insta"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list-items">
+                        <a class="social-list-link" href="">
+                            <svg class="social-list-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list-items">
+                        <a class="social-list-link" href="">
+                            <svg class="social-list-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-fb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list-items">
+                        <a class="social-list-link" href="">
+                            <svg class="social-list-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-ldn"></use>
+                            </svg>
+                        </a>
+                    </li>
+                     </ul>
+                    </div>
+    
+                    </div>
+           
+          
+            </footer>
         
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="modal-close-btn" data-modal-close>
+                    <svg class="modal-close-icon" width="18" height="18">
+                        <use href="./images/sprite.svg#close-icon">
+
+                        </use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <script src="./modal.js"></script>
 </body>
 
 </html>
