@@ -532,6 +532,10 @@ address {
         padding-top: 0px;
     }
 
+
+    .wr {
+        position: relative;
+    }
     .backdrop {
     position: fixed;
     top: 0px;
@@ -585,7 +589,7 @@ address {
     opacity: 0;
     transition: opacity 250ms ease;
     overflow: hidden;
-    transform: rotate2d(0, 90deg);
+    transform: 0;
 }
 
 @keyframes animateY110 {
